@@ -1,0 +1,10 @@
+
+<div id="clock">
+<h2>The Time is:</h2>
+  <div id="time">
+      <div><span id="hour">{{ time | async | date: 'hh'}}</span> <span>Hours</span></div>
+      <div><span id="minutes">{{ time | async | date: 'mm'}}</span> <span>Minutes</span></div>
+      <div><span id="seconds">{{ time | async | date: 'ss'}}</span> <span>Seconds</span></div>
+  </div>
+</div>
+

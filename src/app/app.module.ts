@@ -2,15 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { ClockComponent } from './clock/clock.component';
+import { ClockService } from 'src/app/services/clock.service'
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ClockComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ClockService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
